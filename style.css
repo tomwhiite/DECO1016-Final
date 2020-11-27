@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 
-  
+/* STYLES SPECIFIC TO NAV BAR  */
 .navbar {
     display: flex;
     position: relative;
@@ -13,7 +13,6 @@
     min-height: 15vh;
     font-family: galvji;  
     background-image: linear-gradient(to bottom, #b0f8ff, #c9f8ff, #e3f8ff, #f6faff, #ffffff);
-
 }
 
 .brand-title {
@@ -68,6 +67,8 @@
     border-radius: 10px;
 }
 
+/* NAV BAR RESIZE - ITEMS DISPLAYED IN COLUMN AND ALIGNED IN THE CENTRE OF THE PAGE */
+
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
@@ -100,6 +101,7 @@
         display: flex;
     }
 }
+/* END OF NAV BAR RESIZE */
 
   .text{
     display: flex;
@@ -157,7 +159,8 @@
 
   }
 
-  .cleanForm {
+/* STYLES SPECIFIC TO DONATION INPUT  */
+.cleanForm {
     width: 700px;
 }
 
@@ -191,6 +194,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 
     padding: 5px;
 }
+/* END OF DONATION INPUT  */
 
 
 container{ 
@@ -247,6 +251,44 @@ button:hover {
   background-color: rgba(0,115,236,1);
   color: white;
 }
+
+.button1 {
+  position: relative;
+  background-color: rgb(255, 222, 192);
+  border: none;
+  color: black;
+  border-radius: 25px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Hiragino Sans;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 160px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(199, 199, 199);
+  }
+
+.button2 {
+  position: relative;
+  background-color: rgb(255, 222, 192);
+  border: none;
+  color: black;
+  border-radius: 25px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Hiragino Sans;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 100px;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(199, 199, 199);
+  }
 
 .footer {
   position: fixed;
@@ -339,6 +381,9 @@ button:hover {
 .clearfix {
   clear: both;
 }
+/* END OF FOOTER */
+
+/* STYLES SPECIFIC TO DONATION INPUT  */
 
 .box-container {
   position:relative; 
@@ -348,8 +393,7 @@ button:hover {
 
 .box {
   margin-bottom: 30px;
-  position: relative;
-    
+  position: relative;  
 }
 
 input {
@@ -364,43 +408,7 @@ input {
   color: #a2a5a7;
   }
 
-.button1 {
-  position: relative;
-  background-color: rgb(255, 222, 192);
-  border: none;
-  color: black;
-  border-radius: 25px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-family: Hiragino Sans;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 200px;
-  margin-top: 30px;
-  margin-bottom: 160px;
-  cursor: pointer;
-  box-shadow: 3px 3px 10px rgb(199, 199, 199);
-  }
-
-.button2 {
-  position: relative;
-  background-color: rgb(255, 222, 192);
-  border: none;
-  color: black;
-  border-radius: 25px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-family: Hiragino Sans;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: 100px;
-  margin-top: 30px;
-  cursor: pointer;
-  box-shadow: 3px 3px 10px rgb(199, 199, 199);
-  }
+/* NAV BAR SHRINKING */
 
 @media only screen and (min-width: 1280px) {
   .contain {
@@ -448,6 +456,8 @@ input {
     width: 100%;
   }
 }
+
+/* MOBILE SCREEN ELEMENTS  */
 
 @media screen and (max-width: 768px){
       .pride-image{
